@@ -1,0 +1,5 @@
+package: ubox.uchainscango-web3
+import:
+- package: golang.org/x/net
+  subpackages:
+  - websocket

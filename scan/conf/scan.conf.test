@@ -1,0 +1,24 @@
+##################################
+#s service config file.
+# and, This is a TOML document.
+###################################
+
+Server                  = "scan"
+Port                    = "8359"
+
+Redis                   = "datacenter.inner.poc.com:8379"
+Geth                    = "gateway.inner.poc.com:8545"
+BlockReward             = "10000000000000000000"
+
+[database]
+database                = "poc:poc@2019@tcp(datacenter.inner.poc.com:8306)/pocscan"
+MaxOpenCoons            = 2000
+MaxIdleCoons            = 1000
+Schema                  = "pocscan"
+
+[timeout]
+VerifyTimeOut           = 1800   #verify emailcode
+TokenTimeOut            = 604800
+ConfirmTimeOut          = 60
+TimestapInterval        = 60
+BlockchainTimeout       = 1800
